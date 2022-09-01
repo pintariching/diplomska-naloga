@@ -1,0 +1,30 @@
+\newpage
+
+\subsection{Montaža stročnic}
+Stroj deluje na principu kratko-stružnih stročnic. Zato vsebuje le eno stročnico,
+katero je potrebno zamenjati. Ob menjavi je potrebnu tudi preveriti pritisk
+stročnice, ki se nastavlja z matico. Če je pritisk prevelik, se stročnica veliko
+hitreje obrabi in tudi pušča odtise na izdelku, če je pa premajhen pa obstaja možnost,
+da podajalec potisne palico preko stročnice, ta se pa lahko zatakne med 
+premikajoče dele, uniči rezalne plošlice ali pa zlomi svedre.
+
+Ko se ta nastavi je potrebno prilagoditi krivuljo, ki nadzira odpiranje in 
+zapiranje stročnice. Ta nam stročnico odpre, za tem se celoten zadnji suport
+pomakne nazaj za dolžino kosa kjer se palica ponovno vpne. Medtem pa podajalec
+čež celoten cikel potisne palico ob odrezni nož, da se ob premiku suporta ne premakne.
+
+Potrebno je še izračunat čas, ki nam je na voljo za preprijem stročnice. 
+Ta se zračuna tako, da se od časa cikla odšteje ves skupni čas, potreben 
+za obdelavo po spodnji enačbi \ref{eq:13}:
+
+\begin{equation}
+    \label{eq:13}
+    \begin{split}
+        t_cikel &= t_{r1+r2} + t_{cent} + t_{vrt} + t_{odr} \\
+        t_cikel &= 0.75s + 0.95s + 3.8s + 4.5s = 10s 
+    \end{split}
+\end{equation}
+
+Za vpetje in razpetje stročnice stroj potrebuje približno 0.2s, za premik 
+suporta, pa približno 0.5-0.8s. Možno je nastaviti, da se čas pobiranja robov
+in centriranja prekriva, kar nam omogoča dovolj časa za cikel vpetja. 

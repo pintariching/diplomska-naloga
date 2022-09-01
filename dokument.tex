@@ -1,0 +1,147 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+
+% Robovi
+\usepackage[a4paper, left=3cm, right=2.5cm, top=3cm, bottom=3cm, footskip=1.5cm]{geometry}
+
+\usepackage[slovene]{babel}
+\usepackage{titling}
+\usepackage{authblk}
+\usepackage{lipsum}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{gensymb}
+\usepackage{subfiles}
+\usepackage{datetime}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+% Nastavitev formata datumov
+\newdateformat{monthyeardate}{
+    \monthname[\THEMONTH] \THEYEAR}
+\newdateformat{yeardate}{
+    \THEYEAR}
+
+% Nastavitev barve linkov
+\usepackage[colorlinks, unicode]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    citecolor=black,
+    urlcolor=blue,
+    hypertexnames=true,
+}
+
+% Nastavitev velikosti pisav naslovov
+\titleformat*{\section}{\fontsize{14}{18}\selectfont\bfseries\MakeUppercase}
+\titleformat*{\subsection}{\fontsize{12}{12}\selectfont\bfseries\MakeUppercase}
+\titleformat*{\subsubsection}{\fontsize{12}{12}\selectfont\bfseries}
+
+% Ne upoštevaj kazala, kazala slik in kazala tabel v kazalu
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+
+% Nastavitev razmika med stolpci tabel
+\usepackage{multicol}
+\setlength{\columnsep}{2.5cm}
+
+% Nastavitev poti do mape z slikami
+\usepackage{graphicx}
+\graphicspath{ {./Slike/} }
+
+% Prevod naslova kazala
+\addto\captionsenglish{
+  \renewcommand{\contentsname}
+    {Kazalo}
+}
+
+\renewcommand{\baselinestretch}{1.5}
+
+% Nastavitev naslova, avtorja in datuma
+\title{Nastavljanje stružnega avtomata}
+\author{Tilen Viljem Pintarič}
+\date{\today}
+
+%
+% Začetek dokumenta
+%
+\begin{document}
+\subfile{Preduvod/prva_stran.tex}
+
+% Prazna stran brez noge in stilov
+\newpage\null\thispagestyle{empty}\newpage
+
+\subfile{Preduvod/naslovnica.tex}
+
+% Nastavi številko strani v nogi
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\fontsize{12}{18} \thepage}
+
+\pagenumbering{Roman}
+\subfile{Clanki/zahvale_in_povzetki.tex}
+\newpage
+
+\tableofcontents
+\newpage
+
+\listoffigures
+\newpage
+
+\listoftables
+\newpage
+
+\pagenumbering{arabic}
+\section{Uvod}
+\subsection{Predstavitev podjetja}
+\subfile{Clanki/predstavitev_podjetja.tex}
+
+\section{Teoretičen del}
+\subsection{Stružnica}
+\subfile{Clanki/struznica.tex}
+\newpage
+
+\subsection{Avtomatska stružnica}
+\subfile{Clanki/avtomatska_struznica.tex}
+\newpage
+
+\subsection{Eno-vretenski avtomat}
+\subfile{Clanki/eno-vretenski_avtomat.tex}
+
+\subsection{Več-vretenski avtomat}
+\subfile{Clanki/vec-vretenski_avtomat.tex}
+
+\subsection{Izdelava krivulj}
+\subfile{Clanki/izdelava_krivulj.tex}
+
+\subsection{O orodjih}
+\subfile{Clanki/o_orodjih.tex}
+
+\newpage
+\section{Praktičen del}
+\subfile{Clanki/predstavitev_kosa.tex}
+\subfile{Clanki/postopek_izdelave.tex}
+\subfile{Clanki/izracun_krivulj.tex}
+\subfile{Clanki/izbira_jerjemenov.tex}
+\subfile{Clanki/montaza_strocnic.tex}
+\subfile{Clanki/montaza_orodja.tex}
+\subfile{Clanki/serijska_proizvodnja.tex}
+
+\subfile{Clanki/predlog_za_prakso.tex}
+
+\subfile{Clanki/zaklucek.tex}
+
+
+\newpage
+\bibliographystyle{plain}
+\renewcommand{\refname}{Viri}
+\bibliography{Viri/viri.bib}
+
+\subfile{Clanki/priloge.tex}
+\end{document}
