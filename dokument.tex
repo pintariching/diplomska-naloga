@@ -5,7 +5,6 @@
 
 % Robovi
 \usepackage[a4paper, left=3cm, right=2.5cm, top=3cm, bottom=3cm, footskip=1.5cm]{geometry}
-
 \usepackage[slovene]{babel}
 \usepackage{titling}
 \usepackage{authblk}
@@ -14,7 +13,9 @@
 \usepackage{multirow}
 \usepackage{float}
 \usepackage{amsmath}
-\usepackage{parskip}
+
+% Razmik po odstavku 12pt
+\usepackage[skip=12pt]{parskip}
 \usepackage{gensymb}
 \usepackage{subfiles}
 \usepackage{datetime}
@@ -85,7 +86,7 @@
 \fancyfoot[R]{\fontsize{12}{18} \thepage}
 
 \pagenumbering{Roman}
-\subfile{Clanki/zahvale_in_povzetki.tex}
+\subfile{Naslovi/zahvale_in_povzetki.tex}
 \newpage
 
 \tableofcontents
@@ -98,50 +99,49 @@
 \newpage
 
 \pagenumbering{arabic}
-\section{Uvod}
-\subsection{Predstavitev podjetja}
-\subfile{Clanki/predstavitev_podjetja.tex}
-
-\section{Teoretičen del}
-\subsection{Stružnica}
-\subfile{Clanki/struznica.tex}
-\newpage
-
-\subsection{Avtomatska stružnica}
-\subfile{Clanki/avtomatska_struznica.tex}
-\newpage
-
-\subsection{Eno-vretenski avtomat}
-\subfile{Clanki/eno-vretenski_avtomat.tex}
-
-\subsection{Več-vretenski avtomat}
-\subfile{Clanki/vec-vretenski_avtomat.tex}
-
-\subsection{Izdelava krivulj}
-\subfile{Clanki/izdelava_krivulj.tex}
-
-\subsection{O orodjih}
-\subfile{Clanki/o_orodjih.tex}
-
-\newpage
-\section{Praktičen del}
-\subfile{Clanki/predstavitev_kosa.tex}
-\subfile{Clanki/postopek_izdelave.tex}
-\subfile{Clanki/izracun_krivulj.tex}
-\subfile{Clanki/izbira_jerjemenov.tex}
-\subfile{Clanki/montaza_strocnic.tex}
-\subfile{Clanki/montaza_orodja.tex}
-\subfile{Clanki/serijska_proizvodnja.tex}
-
-\subfile{Clanki/predlog_za_prakso.tex}
-
-\subfile{Clanki/zaklucek.tex}
-
+\begin{sloppypar}
+	\section{Uvod}
+	\subsection{Predstavitev podjetja}
+	\subfile{Naslovi/Uvod/predstavitev_podjetja.tex}
+	
+	\section{Teoretičen del}
+	\subsection{Stružnica}
+	\subfile{Naslovi/Teorija/struznica.tex}
+	
+	\subsection{Avtomatska stružnica}
+	\subfile{Naslovi/Teorija/avtomatska_struznica.tex}
+	
+	\subsection{Eno-vretenski avtomat}
+	\subfile{Naslovi/Teorija/eno-vretenski_avtomat.tex}
+	
+	\subsection{Več-vretenski avtomat}
+	\subfile{Naslovi/Teorija/vec-vretenski_avtomat.tex}
+	
+	\subsection{Izdelava krivulj}
+	\subfile{Naslovi/Teorija/izdelava_krivulj.tex}
+	
+	\subsection{O orodjih}
+	\subfile{Naslovi/o_orodjih.tex}
+	
+	\newpage
+	\section{Praktičen del}
+	\subfile{Naslovi/predstavitev_kosa.tex}
+	\subfile{Naslovi/postopek_izdelave.tex}
+	\subfile{Naslovi/izracun_krivulj.tex}
+	\subfile{Naslovi/izbira_jerjemenov.tex}
+	\subfile{Naslovi/montaza_strocnic.tex}
+	\subfile{Naslovi/montaza_orodja.tex}
+	\subfile{Naslovi/serijska_proizvodnja.tex}
+	
+	\subfile{Naslovi/predlog_za_prakso.tex}
+	
+	\subfile{Naslovi/zaklucek.tex}
+\end{sloppypar}
 
 \newpage
 \bibliographystyle{plain}
 \renewcommand{\refname}{Viri}
 \bibliography{Viri/viri.bib}
 
-\subfile{Clanki/priloge.tex}
+\subfile{Naslovi/priloge.tex}
 \end{document}
