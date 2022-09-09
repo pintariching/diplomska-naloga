@@ -1,0 +1,243 @@
+Orodja na avtomatih so največkrat narejena iz HSS,
+hitroreznega jekla. To so jekla z dodanim kromom, volframom,
+molibdenijem, vanadijem in kobaltom. Na splošno, skupna količina
+legirnih elementov ne presega 7\%. Trdnost teh jekel je zelo visoka,
+od 63 do 67 HRC.
+
+Uporabljajo pa se prav zaradi te visoke trdnosti. Z uporabo
+brusilnega stroja ali brusilke, se surovec obdela v nož po želji,
+moramo pa paziti, da pri brušenju jekla ne pregrejemo, saj tako
+hitro zgubi svojo trdoto.
+Iz njih lahko naredimo katerokoli orodje; stružne, odrezne,
+profilne nože, kot tudi topovske svedre in pestiče. Surovci so
+največkrat dolgi 200 mm in kvadratni z standardnimi merami
+(8x8, 10x10, 12x12, 16x16…). Na spodnji sliki \ref{hss_nozi}
+so prikazani HSS surovci, kateri navadno že imajo brušene
+nekatere površine, za lažje nadaljno brušenje.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=10cm]{hss_nozi.jpg}
+		\caption{HSS surovci
+			\cite{hss_nozi}}
+		\label{hss_nozi}
+	\end{center}
+\end{figure}
+
+Obstojnost hitroreznih jekel v primerjavi z ostalimi ni najboljša,
+lahko se pa izboljša z raznimi prevlekami. Zaradi tega, se za
+avtomatna jekla uporablja večinoma HSS, za trša jekla, nerjavna
+in poboljšana, se pa uporabljajo noži iz karbidnih trdnin,
+narejenih z postopkom sintranja ali WIDIA, ki je pa zelo trda
+kovinska zlitina, katere ime je izpeljano iz besed "Wie Diamant",
+kar po slovensko pomeni \textit{kot diamant}.
+
+\subsubsection{Rezalna hitrost}
+Rezalna hitrost je odvisna od materiala, ki ga obdelujemo,
+obdelovalnega postopka, prereza odrezka, hitrosti podajanja
+in željene površine (groba ali fina). Vrednosti rezalne hitrosti
+najdemo v tabelah, ki so bile narejene na podlagi preizkušanja
+in je nikoli ne računamo. Spodaj na sliki \ref{rezalna_hitrost}
+je primer tabele rezalnih hitrosti vzetih iz Krautovega strojniškega
+priročnika.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=10cm]{rezalne_hitrosti.jpg}
+		\caption{Tabela rezalnih hitrosti
+			\cite{strojniski_prirocnik}}
+		\label{rezalna_hitrost}
+	\end{center}
+\end{figure}
+
+To rezalno hitrost \(V_c\) nato uporabimo v enačbi
+\begin{equation}
+	\begin{split}
+		V_c &= \frac{\pi*D*n}{1000},
+	\end{split}
+\end{equation}
+kjer je \(D\) premer obdelave in lahko izpostavimo obrate glavnega
+vretena \(n\) v \(\frac{obr}{min}\) kot
+\begin{equation}
+	\begin{split}
+		n &= V_c * \pi * D * 1000,
+	\end{split}
+\end{equation}
+nato lahko izračunamo hitrost pomika orodja \(f\) v \(\frac{mm}{min}\)
+\begin{equation}
+	\label{pomik_orodja}
+	\begin{split}
+		f &= n * f_z * Z,
+	\end{split}
+\end{equation}
+kjer je:
+\begin{itemize}
+	\item[--] \(f_z\) -- pomik orodja na en zob in
+	\item[--] \(Z\) -- število zob.
+\end{itemize}
+Pomik na zob \(f_z\) izračunamo z
+\begin{equation}
+	\label{pomik_na_zob}
+	\begin{split}
+		f_z &= \frac{f}{n * Z}.
+	\end{split}
+\end{equation}
+Vidimo, da sta \eqref{pomik_orodja} in \eqref{pomik_na_zob} druga od
+druge odvisni, zato največkrat sami izberemo \(f_z\) glede na to,
+kako togo orodje in stroj imamo, ter kakšen material obdelujemo.
+Za mehkejše in lažje obdelovalne materiale izberemo večji \(f_z\)
+za trdnejše pa manjšega. Pomik na zob izbiramo tudi glede na vrsto obdelave,
+če gre za fino obdelavo, kjer so zahtevnejše tolerance in je zahtevana
+hrapavost površine, vzememo primerno manjše vrednosti.
+
+\subsubsection{Vrtanje}
+Je operacija obdelave materiala z odrezovanjem.
+Pri vrtanju se lahko vrti orodje, obdelovanec ali oba hkrati,
+pri čemer za izračun pomika, vrtljaje seštevamo, če se te vrtijo
+v nasprotno smer. Rezultat operacije je izvrtina valjaste oblike.
+Vrtamo z svedri, ki imajo za vsak material določen rezni kot in kot vzpona
+vijačnice. Npr. za medenino, je kot vzpona zelo velik, da se
+krhki ostružki hitro odstranijo iz luknje. Za jekla, kjer so
+ostružki največkrat dolgi in nepretrgani, uporabljamo svedre z
+zelo majhnim kotom vzpona.
+
+Svedri za kovino so večinoma trdokovinski ali pa narejeni iz
+hitroreznega jekla in prevlečeni z titanovo zlitino.
+Naziv »spiralni sveder« ki se ponekod še uporablja je napačen.
+Spirala je krivulja na ravnini, medtem ko je vijačnica krivulja
+skozi prostor, okoli osi, zato bi praviloma morali uporabljati
+izraz vijačni sveder.
+Poznamo še lasersko vrtanje, ki se uveljavlja v zahtevnih
+proizvodnjah, kjer je potrebno izdelati zelo majhne luknje,
+60 - 150 µm, kar z svedri ni mogoče. Lasersko vrtanje pa je zelo
+uporabno tudi pri vrtanju poševnih izvrtin, kar je za običajno
+vrtanje velik izziv.
+Obstaja pa še elektro-erozijske prebijalke, ki z bakrenimi ali
+grafitnimi elektrodami lahko prebijejo le elektro prevodne materiale.
+
+Za primer imamo spodaj na sliki \ref{hss_sveder} primer navadnega
+vijačnega HSS svedra prevlečenega z titanovo zlitino.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=8cm]{sveder.jpg}
+		\caption{Navaden HSS sveder
+			\cite{sveder}}
+		\label{hss_sveder}
+	\end{center}
+\end{figure}
+\subsubsection{Povrtavanje}
+Je operacija vrtanja, katere namen je izboljšanje točnosti in
+hrapavosti površine v že narejeni izvrtini. Največkrat se
+uporablja ko imamo ujem in moramo doseči gladko površino v
+mejah natančnosti IT6 do IT11. Orodja za povrtavanje, povrtala,
+imajo 6 ali več rezil. Na spodnji sliki \ref{povrtalo} lahko vidimo
+primer ročnega povrtala z šestimi rezili, ki se uporablja na
+univerzalni stružnici.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=10cm]{povrtalo.jpg}
+		\caption{Povrtalo
+			\cite{sts_arhiv}}
+		\label{povrtalo}
+	\end{center}
+\end{figure}
+
+\subsubsection{Vrezovanje navoja}
+Posebna oblika povrtavanja je vrezovanje navoja. Ta operacija se
+lahko izvede samo takrat, ko imamo že predvrtano pravilno
+velikost luknje za dani navoj. Orodja za vrezovanje navojev se
+imenujejo navojni svedri, prikazani na spodnji sliki \ref{navojni_sveder}.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=8cm]{navojni.jpg}
+		\caption{Navojni sveder
+			\cite{sts_arhiv}}
+		\label{navojni_sveder}
+	\end{center}
+\end{figure}
+Ta operacija je še posebej zahtevna pri katerikoli vrsti obdelave,
+saj je za vrezovanje navoja potreben velik navor, kot tudi zelo natančna
+sinhronizacija med glavnim in podajalnim gibanjem. Pri struženju
+na univerzalni stružnici to največkrat ni problem, saj lahko navojni
+sveder vpne v konjička, ki se lahko prosto pomika po vodilih.
+Pri izdelavi navoja na CNC strojih pa moramo paziti, da pravilno vpišemo
+obrate in pomike, ali pa uporabimo kompenzacijsko glavo, v katero se
+vpne navojni sveder in nam ta glava omogoča premikanje svedra, če
+ne moremo točno uskladiti obratov in pomikov, npr. Pri starejših
+strojih.
+
+Na stružnih avtomatih, kjer so obrati glavnega vretena navadno konstantni
+in tudi navadno nemoremo obrniti smeri vrtenja, uporabimo trik, kjer
+spreminjamo hitrost vrtenja navojnega svedra. Če imamo 2000 \(\frac{obr}{min}\)
+na glavnem vretenu in 2200 \(\frac{obr}{min}\) v nasprotnem vretenu, kjer je
+vpet navojni sveder, se te obrati odštejejo in lahko smatramo, kot da vrezujemo
+navoj samo z 200 \(\frac{obr}{min}\). Ko pa hočemo navojni sveder izvleči, pa samo
+zmanjšamo hitrost na nasprotnemu vretenu na npr. 1600 \(\frac{obr}{min}\)
+in ker se to vrti počasnejše od glavnega, lahko sveder izvlečemo iz navoja.
+
+\subsubsection{Grezenje}
+Je postopek širjenja že obstoječe. Orodja imenujemo grezila,
+ki vrtajo kvalitetnejšo luknjo kot sveder ali pa pripravlja
+luknjo za povrtavanje. Z grezili dosegamo natančnosti luknje od
+IT8 do IT10. Poznamo tri vrste grezenja: Grobo, fino in oblikovno grezenje.
+
+Za grobo grezenje se največkrat uporablja samo navadni vijačni
+sveder, za fino grezenje uporabljmao grezila, za oblikovno grezenje
+pa uporabljamo razna stožčasta enorezilna ali večrezilna grezila
+za oblikovanje izvrtin.
+
+Spodaj na sliki \ref{grezilo} je prikazan primer grezenja
+luknje za vijak z konusno glavo.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=4cm]{grezenje.jpg}
+		\caption{Primer grezenja luknje za skritje vijaka
+			\cite{sts_arhiv_grezenje}}
+		\label{grezilo}
+	\end{center}
+\end{figure}
+
+\subsubsection{Struženje}
+Struženje je najbolj razširjen postopek odrezavanja za \
+obdelavo valjastih obdelovancev, možno pa je stružiti tudi ravne ploskve
+in celo nekatere neokrogle oblike, če orodje med delom niha sinhronizirano
+z vrtenjem obdelovanca.
+
+Glavno gibanje pri struženju je rotacijsko in ga opravlja
+obdelovanec. Podajalno gibanje je navadno premočrtno ali pa
+sledi poljubni krivulji. Struženje zavzema velik delež celotne
+obdelave z odrezavanjem, zato je struženje najnatančneje
+raziskan postopek. Raziskovanja pri struženju so dala vrsto
+zakonitosti, ki so osnove za vse postopke odrezavanje kovin.
+
+Poznamo vzdolžno - slika \ref{vzdolzno_struzenje},
+prečno - slika \ref{precno_struzenje}, stožčasto, profilno,
+zarezno struženje - slika \ref{struzenje_utora}, kot tudi struženje navoja, podstruževanje in kopirno struženje.
+
+\begin{multicols}{3}
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{struzenje_utora.jpg}
+		\caption{Struženje utora
+			\cite{sts_arhiv_struzenje}}
+		\label{struzenje_utora}
+	\end{figure}
+
+	\columnbreak
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{vzdolzno_struzenje.jpg}
+		\caption{Vzdolžno struženje
+			\cite{sts_arhiv_struzenje}}
+		\label{vzdolzno_struzenje}
+	\end{figure}
+
+	\columnbreak
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{precno_struzenje.jpg}
+		\caption{Prečno struženje
+			\cite{sts_arhiv_struzenje}}
+		\label{precno_struzenje}
+	\end{figure}
+\end{multicols}

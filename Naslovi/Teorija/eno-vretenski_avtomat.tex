@@ -5,7 +5,7 @@ preko zobnikov s katerimi izbiramo, preko tabele, čas cikla enega
 kosa, saj se za en obrat krivuljnega vretena izvede en cikel.
 
 Na spodnji sliki \ref{pogon} je v pogledu od zgoraj prikazana shema
-nekaterih delov eno-vretenske avtomatske stružnice. Pod številko 21 in 18
+nekaterih delov eno-vretenske avtomatske stružnice Gauthier GM-127. Pod številko 21 in 18
 so narisana ležajna mesta skozi katera gre glavna krivuljna gred.
 Pravokotno na njo so na raznih mestih vpete krivulje, ki preko sledilcev
 in vzvodov premikajo razne dele stroja. Pod številko 19 je narisano
@@ -18,11 +18,9 @@ glavno vreteno in pod številko 31 so nasprotna vretena, kamor se vpenjajo svedr
 		\label{pogon}
 	\end{center}
 \end{figure}
-
-\noindent Za pogon se največkrat uporablja običajen trofazni elektromotor,
-ki preko menjalnika vrti glavno vreteno. Poznamo pa dve vrsti
-menjalnikov
-
+Za pogon se največkrat uporablja običajen trofazni elektromotor,
+ki preko menjalnika vrti glavno vreteno, krivuljno gred in ostala
+pomožna vretena. Poznamo pa dve vrsti menjalnikov
 \begin{itemize}
 	\item Avtomatski - z krivuljo lahko izbiramo med polno
 	      hitrostjo, \( \frac{1}{2} \), \( \frac{1}{3} \), \( \frac{1}{4} \)
@@ -32,7 +30,6 @@ menjalnikov
 	\item Ročni- hitrost se nastavlja ročno z izbiro zobnikov
 	      v menjalniku in se med obratovanjem ne more spreminjati.
 \end{itemize}
-\newpage
 
 \subsubsection{Vpetje obdelovanca}
 Avtomatske stružnice uporabljajo za vpetje izključno stročnice,
@@ -61,7 +58,7 @@ Na spodnji sliki \ref{tipi_vodilnih_pus} je na levi strani prikazana
 shema dolgo-stružne konfiguracije, na desni pa kratkostružna konfiguracija
 stročnic na avtomatski stružnici.
 
-\begin{figure}[H]
+\begin{figure}
 	\begin{center}
 		\includegraphics[width=\linewidth]{skuca_dolgo_struzenje.jpg}
 		\caption{Shema postavitve pri dolgem struženju z stročnicami
@@ -72,21 +69,36 @@ stročnic na avtomatski stružnici.
 
 Prednosti dolgo-stružnih avtomatov je pa daljša dolžina struženja
 in boljše vpetje obdelovanca, zato je bolj primerna za daljše
-kose manjših premerov.
+kose manjših premerov. Z primerno podporo se lahko obdeluje
+tudi po celotni dolžini materiala.
 
-Prednost kratko-stružnih avtomatov je krajši ostanek in cenejši
-postopek, ker so vodilne stročnice veliko dražje od navadnih.
-Slabost pa je krajša dolžina struženja.
+Prednost kratko-stružnih avtomatov je krajši ostanek palice,
+ker sta vodilna puša in vpenjalna stročnica med seboj oddaljeni
+in vpenjalna stročnica ne more v celoti poriniti palice skozi vpenjalno
+stročninco. Slabost pa je krajša dolžina struženja, saj je material
+fiksno vpet in se lahko pri manjših premerih, ki so dlje vpeti, pride
+do zvijanja.
 
 \subsubsection{Podajanje obdelovancev}
 Za podajanje se uporabljajo podajalne naprave, ki podajajo
 obdelovanec z hidravliko ali pa z utežmi. Hidravlična podajalna
 naprava večinoma lahko sprejme več kot eno palico in jih tudi sama
 zamenja in vstavi v stroj. Možno je tudi nastavljati moč in dolžino
-podajanja.
+podajanja. Obstajajo tudi revolverske hidravlične podajalne naprave,
+katere imajo ločene cevi, navadno 6, ki delujejo kot hidravlični cilinder
+in porivajo palice proti stružnici.
 
 Spodaj, na sliki \ref{hidrobar_nalaganje}, je prikazan postopek
 avtomatskega nalaganja novega obdelovanca v kanal hidrobara.
+Navadno imajo hidrobarji zalogovnik za neko število palic, odvisno
+od premera samega materiala. Ko hidrobar zazna, da v obdelovalnemu
+kanalu ni več materiala, se obdelovalni kanal odpre in preko posebnega
+mehanizma v njega pade samo ena palica. Ta se lahko nabije v posebne
+stročnice, ki so nameščene na podajalni bat in tako omogočajo, da se
+material pomika v stružnico in se po koncu obdelave tudi izvleče ostanek.
+Lahko se pa tudi uporabi brez stročnice na podajalnem batu, v tem primeru
+pa izgubimo sposobnost premikanja palice v obe smeri in moramo ostanek z
+naslednjo vstavljeno palico izriniti skozi stročnice.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=15cm]{hidrobar_shema.jpg}
@@ -96,13 +108,21 @@ avtomatskega nalaganja novega obdelovanca v kanal hidrobara.
 	\end{center}
 \end{figure}
 
+
+
 Obstajajo tudi podajalci, ki za vstavljanje palice uporabljajo
-utež. Ti so veliko cenejši in lažji za postavitev in nastavitev.
-Edina negativna stvar takšnih podajalcev je, da lahko naložimo v
-njih samo eno palico obdelovanca.
+utež. Ti so veliko cenejši in lažji za postavitev, izdelavo in nastavitev.
+V njih lahko vstavimo samo eno palico materiala in je potrebna ročna menjava
+palice po koncu obdelave. Zaradi tega, se največkrat uporabljajo za
+krivuljne avtomate.
 
 Na spodnji sliki \ref{shema_rocnega_podajalca} je prikazana shema
-delovanja ročnega podajalca palic.
+delovanja ročnega podajalca palic. Pri menjavi iz stročnic na batu za podajanje
+odstranimo ostanek palice, navadno dolg nekje do 20 cm. Nato previdno
+vstavimo v stročnice novo palico in jo ročno porinemo do konca cevi.
+Pri tem preko vrvi dvigujemo utež, ki mora biti ravno prav balansirana,
+da nam omogoča enostavno vstavljanje, kot tudi dovoljšno silo pri samodejnem
+delovanju.
 
 \begin{figure}[H]
 	\begin{center}
@@ -118,27 +138,32 @@ Je krmilni del vsakega krivuljnega avtomata. Vsebuje krivulje,
 ki so največkrat iz kaljenega jekla, odpornega proti obrabi. Za en
 obrat krivuljnega vretena, se zaključi en cikel obdelovanja in je
 izdelan eden izdelek (Lahko tudi več, odvisno od nastavitve stroja).
-Hitrost obračanja se lahko spreminja z
-zobniki, imamo tudi že vnaprej pripravljeno tabelo, po kateri
+Hitrost obračanja se lahko spreminja z prestavinimi razmerji
+zobnikov, imamo pa tudi že vnaprej pripravljeno tabelo, po kateri
 lahko izbiramo željeno hitrost in potrebne zobnike. Krivulje nato
 preko sledilcev in vzvodov premikajo prečne suporte,
-revolverske sani, vpenjajo obdelovanec…
+revolverske sani, vpenjajo in izpenjajo obdelovanec…
 
 \noindent Poznamo dve vrsti krivulj:
-
 \begin{itemize}
 	\item Navadne - ploščate krivulje: uporabljamo za prečne pomike.
-	\item Bobnaste krivulje: uporabljamo za vzdolžne pomike.
+	\item Bobnaste krivulje: uporabljamo za vzdolžne pomike, navadno
+	      sestavljene iz večih segmentov.
 \end{itemize}
 
 Krivuljna gred se lahko vklopi ali izklopi z pomočjo ročne sklopke,
-ki se uporablja kadar se stroj nastavlja. Sklopka ima vgrajen
+lahko se pa tudi ročno obrača preko te sklopke in se uporablja kadar
+se stroj nastavlja ali pa menja orodje. Sklopka ima vgrajen
 zatič, ki se ob potencialnem strojelomu pretrga in ustavi vrtenje
-krivuljne gredi. Za izdelavo krivulj je potrebno veliko časa, saj
+krivuljne gredi vendar se glavni motor ob temu ne izklopi.
+Ob temu lahko pride do velikega trenja, če se orodje zaleti v
+material, stročnico ali ostale rotirajoče dele, kar lahko tudi
+potencialno povzroči vžig mazalnega ali hladilnega olja.
+
+Za izdelavo krivulj je potrebno veliko časa, saj
 se nenatančnosti geometrije poznajo na končnem izdelku. Zato je
 veliko krivulj standardiziranih in imajo vnaprej določen kot in
-višino vzpona in se lahko avtomat hitreje nastavi. Krivuljo po
+višino vzpona in se lahko stroj hitreje nastavi. Krivuljo po
 meri se izdeluje samo, če je serija kosov dovolj velika in če ni
 nikakršne druge možnosti.
 
-\newpage

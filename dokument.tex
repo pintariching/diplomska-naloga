@@ -1,4 +1,4 @@
-\documentclass[a4paper, 12pt]{article}
+\documentclass[a4paper, 12pt, fleqn]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage{times}
@@ -12,7 +12,10 @@
 \usepackage[table]{xcolor}
 \usepackage{multirow}
 \usepackage{float}
+
+% Nastavitev zamika za enačbe
 \usepackage{amsmath}
+\setlength\mathindent{2cm}
 
 % Razmik po odstavku 12pt
 \usepackage[skip=12pt]{parskip}
@@ -21,6 +24,10 @@
 \usepackage{datetime}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
+
+\usepackage{enumitem,datatool}
+\newlist{abbrv}{itemize}{1}
+\setlist[abbrv,1]{labelwidth=4cm,align=parleft,parsep=0pt,leftmargin=!}
 
 % Nastavitev formata datumov
 \newdateformat{monthyeardate}{
@@ -77,6 +84,7 @@
 % Prazna stran brez noge in stilov
 \newpage\null\thispagestyle{empty}\newpage
 
+\subfile{Preduvod/prva_stran.tex}
 \subfile{Preduvod/naslovnica.tex}
 
 % Nastavi številko strani v nogi
@@ -98,11 +106,15 @@
 \listoftables
 \newpage
 
+\subfile{Preduvod/seznam_kratic_in_simbolov.tex}
+\newpage
+
 \pagenumbering{arabic}
 \begin{sloppypar}
 	\section{Uvod}
 	\subsection{Predstavitev podjetja}
 	\subfile{Naslovi/Uvod/predstavitev_podjetja.tex}
+	\newpage
 	
 	\section{Teoretičen del}
 	\subsection{Stružnica}
@@ -121,19 +133,18 @@
 	\subfile{Naslovi/Teorija/izdelava_krivulj.tex}
 	
 	\subsection{O orodjih}
-	\subfile{Naslovi/o_orodjih.tex}
+	\subfile{Naslovi/Teorija/o_orodjih.tex}
 	
 	\newpage
 	\section{Praktičen del}
-	\subfile{Naslovi/predstavitev_kosa.tex}
-	\subfile{Naslovi/postopek_izdelave.tex}
-	\subfile{Naslovi/izracun_krivulj.tex}
-	\subfile{Naslovi/izbira_jerjemenov.tex}
-	\subfile{Naslovi/montaza_strocnic.tex}
-	\subfile{Naslovi/montaza_orodja.tex}
-	\subfile{Naslovi/serijska_proizvodnja.tex}
+	\subfile{Naslovi/Prakticen_del/predstavitev_kosa.tex}
+	\subfile{Naslovi/Prakticen_del/postopek_izdelave.tex}
+	\subfile{Naslovi/Prakticen_del/izracun_krivulj.tex}
+	\subfile{Naslovi/Prakticen_del/izbira_jerjemenov.tex}
+	\subfile{Naslovi/Prakticen_del/montaza_strocnic.tex}
+	\subfile{Naslovi/Prakticen_del/montaza_orodja.tex}
+	\subfile{Naslovi/Prakticen_del/serijska_proizvodnja.tex}
 	
-	\subfile{Naslovi/predlog_za_prakso.tex}
 	
 	\subfile{Naslovi/zaklucek.tex}
 \end{sloppypar}

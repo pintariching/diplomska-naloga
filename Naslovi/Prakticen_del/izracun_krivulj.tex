@@ -1,0 +1,178 @@
+\subsection{Izračun krivulj}
+Za vsako krivuljo bom izračunal kakšna naj bi bila, glede na
+željene parametre, nato pa izbral najbližjo standardno krivuljo,
+katero lahko najdem katalogu standardnih krivulj.
+Čas enega cikla, se pravi enkraten obrat krivuljne gredi, bo 10s.
+Formule bom uporabil iz poglavja \nameref{izracun_krivulj}
+
+\subsubsection{Struženje roba}
+Vrtljaji: 2000 \( \frac{vrt}{min} \) \\
+Pomik: 0.04 \( \frac{mm}{vrt} \) \\
+Dolžina struženja: 1 mm
+
+Z zgornjimi podatki izračunamo potreben čas
+\begin{equation}
+	\begin{split}
+		t &= \frac{l*60s}{f*S} \\
+		t &= \frac{1mm*60s}{0.04\frac{mm}{obr}*2000\frac{obr}{min}} \\
+		t &= 0.75 s
+	\end{split}
+\end{equation}
+nato pa še kot vzpona krivulje
+\begin{equation}
+	\begin{split}
+		\alpha &= \frac{360\degree}{T} * t \\
+		\alpha &= \frac{360\degree}{10s} * 0.75 s\\
+		\alpha &= 27\degree
+	\end{split}
+\end{equation}
+
+Spodaj na sliki \ref{shema_robov} sem še narisal skico orodja
+in obdelovanca pri pobiranju robov.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=8cm]{robi.png}
+		\caption{Skica poteka pobiranja robov
+			\cite{lasten}}
+		\label{shema_robov}
+	\end{center}
+\end{figure}
+
+\subsubsection{Središčenje}
+Vrtljaji: 2000 \( \frac{vrt}{min} \) + 2200 \( \frac{vrt}{min} \)\\
+Pomik: 0.03 \( \frac{mm}{vrt} \) \\
+Dolžina vrtanja: 2 mm
+
+Enako krivuljo sem uporabil tudi za povrtavanje luknje iz druge strani.
+\begin{equation}
+	\begin{split}
+		t &= \frac{l*60s}{f*S} \\
+		t &= \frac{2mm*60s}{0.03\frac{mm}{obr}*4200\frac{obr}{min}} \\
+		t &= 0.95 s
+	\end{split}
+\end{equation}
+\begin{equation}
+	\begin{split}
+		\alpha &= \frac{360\degree}{T} * t \\
+		\alpha &= \frac{360\degree}{10s} * 0.95 s\\
+		\alpha &= 34.2\degree
+	\end{split}
+\end{equation}
+Spodaj na sliki \ref{centriranje} je prikazan potek
+centriranja pred vrtanjem.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=8cm]{centriranje.png}
+		\caption{Skica poteka centriranja
+			\cite{lasten}}
+		\label{centriranje}
+	\end{center}
+\end{figure}
+
+
+\subsubsection{Vrtanje}
+Vrtljaji: 2000 \( \frac{vrt}{min} \) + 2200 \( \frac{vrt}{min} \)\\
+Pomik: 0.03 \( \frac{mm}{vrt} \) \\
+Dolžina vrtanja: 8 mm
+
+\begin{equation}
+	\begin{split}
+		t &= \frac{l*60s}{f*S} \\
+		t &= \frac{8mm*60s}{0.03\frac{mm}{obr}*4200\frac{obr}{min}} \\
+		t &= 3.8 s
+	\end{split}
+\end{equation}
+\begin{equation}
+	\begin{split}
+		\alpha &= \frac{360\degree}{T} * t \\
+		\alpha &= \frac{360\degree}{10s} * 3.8 s\\
+		\alpha &= 136.8\degree
+	\end{split}
+\end{equation}
+
+Na spodnji sliki \ref{vrtanje} je prikazana skica vrtanja
+luknje $\phi 1.4$.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=8cm]{vrtanje.png}
+		\caption{Skica poteka vrtanja
+			\cite{lasten}}
+		\label{vrtanje}
+	\end{center}
+\end{figure}
+
+Zaradi večje globine vrtanja in malega premera svedra,
+sem v krivuljo dodal luknjo zato, ker se navadno vrta globino 3x
+premera svedra v eni potezi, za globje luknje se pa sveder
+izvleče, da se ohladi in očisti ostružkov, nato se pa nadaljuje vrtanje.
+Za premik svedrov se na tem stroju uporablja bobnaste krivulje,
+zato sem tukaj skiciral raztegnjeno bobnasto krvuljo kot prikazano
+na sliki \ref{raztegnjen_boben}.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\linewidth]{skica_krivulje_vrtanja.png}
+		\caption{Raztegnjena bobnasta krivulja
+			\cite{lasten}}
+		\label{raztegnjen_boben}
+	\end{center}
+\end{figure}
+\newpage
+
+\subsubsection{Odrez}
+Vrtljaji: 2000 \( \frac{vrt}{min} \) \\
+Pomik: 0.02 \( \frac{mm}{vrt} \) \\
+Dolžina struženja: 3 mm
+
+\begin{equation}
+	\begin{split}
+		t &= \frac{l*60s}{f*S} \\
+		t &= \frac{3mm*60s}{0.02\frac{mm}{obr}*2000\frac{obr}{min}} \\
+		t &= 4.5 s
+	\end{split}
+\end{equation}
+\begin{equation}
+	\begin{split}
+		\alpha &= \frac{360\degree}{T} * t \\
+		\alpha &= \frac{360\degree}{10s} * 3.8 s\\
+		\alpha &= 146\degree
+	\end{split}
+\end{equation}
+
+Spodaj na sliki \ref{odrez} je prikazana skica odreza kosa z odreznim nožem.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=8cm]{odrez.png}
+		\caption{Skica poteka odreza
+			\cite{lasten}}
+		\label{odrez}
+	\end{center}
+\end{figure}
+
+\subsubsection{Rezultati izračunov}
+V spodnji tabeli \ref{Tabela rezultatov} so prikazani
+rezultati mojih izračunov.
+
+\begin{table}[H]
+	\caption{Tabela povzetkov izračunov krivulj}
+	\label{Tabela rezultatov}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			Št. & Operacija              & Vzpon [mm] & Kot [°] \\
+			\hline
+			1   & Struženje prvega roba  & 1          & 27      \\
+			\hline
+			2   & Struženje drugega roba & 1          & 27      \\
+			\hline
+			3   & Centriranje            & 2          & 34.2    \\
+			\hline
+			4   & Vrtanje                & 8          & 136.8   \\
+			\hline
+			5   & Odrez                  & 3          & 146     \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
