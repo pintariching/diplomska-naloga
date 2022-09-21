@@ -29,7 +29,6 @@ nato pa še kot vzpona krivulje
 
 Spodaj na sliki \ref{shema_robov} sem še narisal skico orodja
 in obdelovanca pri pobiranju robov.
-
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=8cm]{robi.png}
@@ -61,7 +60,6 @@ Enako krivuljo sem uporabil tudi za povrtavanje luknje iz druge strani.
 \end{equation}
 Spodaj na sliki \ref{centriranje} je prikazan potek
 centriranja pred vrtanjem.
-
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=8cm]{centriranje.png}
@@ -70,13 +68,10 @@ centriranja pred vrtanjem.
 		\label{centriranje}
 	\end{center}
 \end{figure}
-
-
 \subsubsection{Vrtanje}
 Vrtljaji: 2000 \( \frac{vrt}{min} \) + 2200 \( \frac{vrt}{min} \)\\
 Pomik: 0.03 \( \frac{mm}{vrt} \) \\
 Dolžina vrtanja: 8 mm
-
 \begin{equation}
 	\begin{split}
 		t &= \frac{l*60s}{f*S} \\
@@ -91,7 +86,6 @@ Dolžina vrtanja: 8 mm
 		\alpha &= 136.8\degree
 	\end{split}
 \end{equation}
-
 Na spodnji sliki \ref{vrtanje} je prikazana skica vrtanja
 luknje $\phi 1.4$.
 \begin{figure}[H]
@@ -102,7 +96,6 @@ luknje $\phi 1.4$.
 		\label{vrtanje}
 	\end{center}
 \end{figure}
-
 Zaradi večje globine vrtanja in malega premera svedra,
 sem v krivuljo dodal luknjo zato, ker se navadno vrta globino 3x
 premera svedra v eni potezi, za globje luknje se pa sveder
@@ -110,7 +103,6 @@ izvleče, da se ohladi in očisti ostružkov, nato se pa nadaljuje vrtanje.
 Za premik svedrov se na tem stroju uporablja bobnaste krivulje,
 zato sem tukaj skiciral raztegnjeno bobnasto krvuljo kot prikazano
 na sliki \ref{raztegnjen_boben}.
-
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\linewidth]{skica_krivulje_vrtanja.png}
@@ -120,13 +112,11 @@ na sliki \ref{raztegnjen_boben}.
 	\end{center}
 \end{figure}
 \newpage
-
 \subsubsection{Odrez}
 \label{izracun_odreza}
 Vrtljaji: 2000 \( \frac{vrt}{min} \) \\
 Pomik: 0.02 \( \frac{mm}{vrt} \) \\
 Dolžina struženja: 3 mm
-
 \begin{equation}
 	\begin{split}
 		t &= \frac{l*60s}{f*S} \\
@@ -142,38 +132,35 @@ Dolžina struženja: 3 mm
 	\end{split}
 \end{equation}
 
-Spodaj na sliki \ref{odrez} je prikazana skica odreza kosa z odreznim nožem.
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=8cm]{odrez.png}
-		\caption{Skica poteka odreza
-			\cite{lasten}}
-		\label{odrez}
-	\end{center}
-\end{figure}
-
-\subsubsection{Rezultati izračunov}
+\subsubsection{Rezultati izračunov in izbira standardnih krivulj}
 V spodnji tabeli \ref{Tabela rezultatov} so prikazani
-rezultati mojih izračunov.
+rezultati mojih izračunov, z katerimi sem izbral približno
+enake standardne krivulje, ki jih je imelo podjetje na zalogi.
+Zato, da se sledilci manj obrabljajo in da se zmanjša sila sledilca
+na krivuljo, sem se odločil za vse krivulje uporabiti razmerje ročic
+5:1, kar pomeni da za 5 mm vzpona krivulje, se bo orodje premaknilo za 1 mm.
 
 \begin{table}[H]
-	\caption{Tabela povzetkov izračunov krivulj}
+	\caption{Povzetki izračunov krivulj}
 	\label{Tabela rezultatov}
 	\begin{center}
-		\begin{tabular}{|c|c|c|c|}
+		\begin{tabular}{|c|c|c|c|c|}
 			\hline
-			Št. & Operacija              & Vzpon [mm] & Kot [°] \\
+			Operacija      & Vzpon [mm] & Razmerje & Vzpon z razmerjem [mm] & Kot [°] \\
 			\hline
-			1   & Struženje prvega roba  & 1          & 27      \\
+			Struženje roba & 1          & 5        & 5                      & 27      \\
 			\hline
-			2   & Struženje drugega roba & 1          & 27      \\
+			Centriranje    & 2          & 5        & 10                     & 34.2    \\
 			\hline
-			3   & Centriranje            & 2          & 34.2    \\
+			Vrtanje        & 8          & 5        & 40                     & 136.8   \\
 			\hline
-			4   & Vrtanje                & 8          & 136.8   \\
-			\hline
-			5   & Odrez                  & 3          & 146     \\
+			Odrez          & 3          & 5        & 15                     & 146     \\
 			\hline
 		\end{tabular}
 	\end{center}
 \end{table}
+
+Za struženje roba sem našel krivuljo, ki se vzpne za 5 mm v 30 °,
+za odrez pa nisem našel primerne krivulje, zato sem jo izdelal sam.
+Za centriranje in vrtanje tudi nisem našel primernih bobnastih krivulj,
+zato sem za njih prosil sodelavca, da jih izdela.
