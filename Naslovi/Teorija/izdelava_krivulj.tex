@@ -1,23 +1,22 @@
 \subsubsection{Navadne krivulje}
 Novejši postopki so znatno olajšali izdelavo krivulj.
-Lahko se izdelajo na CNC rezkalnem stroju na magnetni ali vakuumski mizi,
-z žično erozijo, ki je nekoliko dražji a natančnejši postopek in tudi
-obdelujemo lahko mnogo trše in trdnejše materiale ali pa tudi z
-plamenskim in laserskim odrezom, kjer moramo po koncu izreza, površine
+Lahko se izdelajo na CNC-rezkalnem stroju na magnetni ali vakuumski mizi
+z žično erozijo, ki je nekoliko dražji, a natančnejši postopek, in tudi omogoča
+obdelovanje mnogo trših in trdnejših materialov, ali pa tudi s
+plamenskim in laserskim odrezom, kjer moramo po koncu izreza površine
 dodatno zbrusiti ročno, saj navadno te niso gladke.
 
 Najbolj pogosto se izdelujejo iz jekla CK45 (1.1191), ki vsebuje
-0.45 \% C, 0.65 \% Mn, 0.035 \% P in manj kot 0.035 \% S in ima natezno trdnost okoli 725 MPa. \cite{interna}
+0.45 \% C, 0.65 \% Mn, 0.035 \% P in manj kot 0.035 \% S ter ima natezno trdnost okoli 725 MPa. \cite{interna}
 
-Pred CNC stroji so krivulje izdelovali ročno na rezkalnih in vrtalnih strojih
+Pred CNC-stroji so krivulje izdelovali ročno na rezkalnih in vrtalnih strojih
 in dokončno obdelali z ročnimi brusilkami.
 Najprej se je ročno izrisala krivulja in se prenesla na surovec.
 Če je bil surovec veliko večji od načrtovane krivulje, so se po
-zunanji konturi izvrtale luknje tako, da so se približno 1-2mm
-prekrivale. Potem se je krivulja, z kladivom in veliko tolčenja, izbila iz prvotnega surovca,
-se vpela v primež in se z kotno brusilko izbrusila v končno obliko.
+zunanji konturi izvrtale luknje tako, da so se prekrivale približno za 1--2 mm. Potem se je krivulja s kladivom in veliko tolčenja izbila iz prvotnega surovca,
+se vpela v primež in se s kotno brusilko izbrusila v končno obliko.
 
-Spodaj, na sliki \ref{ploscate_krivulje} je prikazanih nekaj primerov
+Spodaj, na Sliki \ref{ploscate_krivulje} je prikazanih nekaj primerov
 po meri izdelanih ploščatih krivulj.
 
 \begin{figure}[H]
@@ -31,12 +30,12 @@ po meri izdelanih ploščatih krivulj.
 
 \subsubsection{Preračun navadnih krivulj}
 \label{izracun_krivulj}
-Primer: Imamo obdelovanec premera D - 12 mm, ki se vrti z hitrostjo S = 2000 \( \frac{obr}{min} \)
-in časom enega cikla T - 30 s. Hočemo ga odrezati z odreznim nožem z pomikom f - 0.04 \( \frac{mm}{obr} \)
-(Da stvar poenostavimo sem že izbral željen pomik na obrat, namesto da bi ga
-izračunal iz rezalne hitrosti in premera)
+Primer: Imamo obdelovanec premera D -- 12 mm, ki se vrti z hitrostjo S = 2000 \( \frac{obr}{min} \)
+in časom enega cikla T -- 30 s. Hočemo ga odrezati z odreznim nožem z pomikom f -- 0.04 \( \frac{mm}{obr} \)
+(da stvar poenostavimo, sem že izbral željen pomik na obrat, namesto da bi ga
+izračunal iz rezalne hitrosti in premera).
 
-Zaradi varnosti, bomo določili, da nož začne z delovnim gibom
+Zaradi varnosti, bomo določili, da začne nož z delovnim gibom
 na $\phi13$ in konča na $\phi-1$. To pomeni, da bo potoval 7 mm, ker
 imamo simetrično obdelovanje.
 
@@ -44,24 +43,24 @@ imamo simetrično obdelovanje.
 \begin{equation}
 	\label{cas_za_hod}
 	\begin{split}
-		t &= \frac{l*60s}{f*S} \\
-		t &= \frac{7mm*60}{0.04\frac{mm}{obr}*2000\frac{obr}{min}} \\
-		t &= 5.25s
+		t &= \frac{l*60\ s}{f*S} \\
+		t &= \frac{7\ mm*60}{0.04\ \frac{mm}{obr}*2000\ \frac{obr}{min}} \\
+		t &= 5.25\ s
 	\end{split}
 \end{equation}
 
 Kolikšen kot krivulje mora obsegati vzpon, da bomo
-dosegli željen pomik izračunamo
+dosegli željen pomik, izračunamo tako:
 \begin{equation}
 	\label{kot_krivulje}
 	\begin{split}
 		\alpha &= \frac{360\degree}{T} * t \\
-		\alpha &= \frac{360\degree}{30s} * 5.25s \\
+		\alpha &= \frac{360\degree}{30\ s} * 5.25\ s \\
 		\alpha &= 63\degree
 	\end{split}
 \end{equation}
 
-Če imamo razmerje med vzvodi sledilca in nožem 1:1, potem se more krivulja v 63° vzpet za 7 mm.
+Če imamo razmerje med vzvodi sledilca in nožem 1:1, potem se mora krivulja v 63° vzpeti za 7 mm.
 Zdaj imamo dve možnosti:
 \begin{itemize}
 	\item Izdelamo krivuljo po meri.
@@ -69,14 +68,14 @@ Zdaj imamo dve možnosti:
 \end{itemize}
 
 \subsubsection{Bobnaste krivulje}
-Sodobna izdelava bobnastih krivulj poteka na CNC rezkalnih strojih
-z vsaj štirimi osmi. Pred tem, pa so bobnaste krivulje večinoma delali v
-odsekih in jih z tem ločili na hitre in delovne gibe in je bilo z tem
-mogoče lažje in bolj natančno nastavljati zamike krivulj.
+Sodobna izdelava bobnastih krivulj poteka na CNC-rezkalnih strojih
+z vsaj štirimi osmi. Pred tem pa so bobnaste krivulje večinoma delali v
+odsekih in jih s tem ločili na hitre in delovne gibe, pri čemer je bilo tako
+mogoče lažje ter bolj natančno nastavljati zamike krivulj.
 Možno je tudi, da se obrabljena krivulja enostavno zamenja brez
-večjega zastoja. Po izdelavi se zakalijo na približno 50-60 HRC.
+večjega zastoja. Po izdelavi se zakalijo na približno 50--60 HRC.
 
-Na spodnji sliki \ref{bobnaste_krivulje} je prikazan primer
+Na spodnji Sliki \ref{bobnaste_krivulje} je prikazan primer
 bobnaste krivulje.
 
 \begin{figure}[H]
@@ -94,19 +93,19 @@ obstojnost. ''Jekla, ki jih kalimo, najprej segrevamo na predpisano
 kalilno temperaturo. [...] Sledi zadrževanje izdelkov pri temperaturi
 kajlenja, da dobimo izenačeno temperaturo med površino in jedrom
 žarjenega izdelka.'' \cite{gradiva}
-Za tem krivuljo kalimo v kalilnem stredstvu, zraku, olju ali najlažje
-v vodi. Celoten potek kaljenja je prikazan na spodji sliki \ref{diagram_kaljenja}.
-Izbira kalilnega sredstva je odvisna od samega materiala
+Za tem krivuljo kalimo v kalilnem sredstvu, zraku, olju ali najlažje
+v vodi. Celoten potek kaljenja je prikazan na spodji Sliki \ref{diagram_kaljenja}.
+Izbira kalilnega sredstva je odvisna od samega materiala,
 saj ima vsak material svojo hitrost ohlajanja za tvorbo fino zrnate strukture.
-Po kaljenju lahko še popuščamo krivuljo, z čim bi zmanjšali trdoto
-in povečali žilavost in trdnost, kar v našem primeru ni najboljše.
+Po kaljenju lahko še popuščamo krivuljo, s čimer bi zmanjšali trdoto
+in povečali žilavost ter trdnost, kar v našem primeru ni najboljše.
 Krivulja mora biti čim trša in odporna proti površinski obrabi,
 da čim dlje zdrži.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=10cm]{diagram_kaljenja.jpg}
-		\caption{Diagram kaljenja z popuščanjem
+		\caption{Diagram kaljenja s popuščanjem
 			\cite{diagram_kaljenja}}
 		\label{diagram_kaljenja}
 	\end{center}
@@ -114,12 +113,12 @@ da čim dlje zdrži.
 
 Kalimo lahko na naslednje načine:
 \begin{itemize}
-	\item Kaljenje v pečeh.
-	\item Induktivno Kaljenje.
-	\item Plamensko kaljenje.
+	\item kaljenje v pečeh,
+	\item induktivno Kaljenje,
+	\item plamensko kaljenje.
 \end{itemize}
 
-Na sliki \ref{induktivno_kaljenje} je prikazan primer induktivnega
+Na Sliki \ref{induktivno_kaljenje} je prikazan primer induktivnega
 segrevanja obdelovanca med bakrenimi obroči.
 
 \begin{figure}[H]
@@ -135,19 +134,19 @@ Kaljenje v pečeh in induktivno kaljenje je v večji meri uporabno
 za večje količine kosov. Omogoča namreč hitro in natančno kaljenje,
 saj so sodobne peči elektronsko krmiljene in opremljene z raznimi senzorji.
 
-Plamensko kaljenje se pa uporablja za manjše količine ali za
-posamične kose, kateri ne potrebujejo natančne trdote. Za
-segrevanje se uporablja plamenski gorilnik, z katerim segrejemo
-material do določene barve in ga nato ohladimo v vodi ali v olju.
+Plamensko kaljenje pa se uporablja za manjše količine ali za
+posamične kose, ki ne potrebujejo natančne trdote. Za
+segrevanje se uporablja plamenski gorilnik, a katerim segrejemo
+material do določene barve in ga nato ohladimo v vodi ali olju.
 
 Temperature kaljenja so odvisne od jekla in njegovih legirnih
 elementov. Segajo od 700 °C do 900 °C, temperature popuščanja
 pa od 200 °C do 500 °C. Močnejše legirana jekla je potrebno
-segrevati počasi do okolice 400 °C do 500 °C, da postane jeklo
-duktilno nato ga lahko segrevamo hitreje.
+segrevati počasi od okoli 400 °C do 500 °C, da postane jeklo
+duktilno, nato ga lahko segrevamo hitreje.
 
 Trajanje kaljenja je odvisno od debeline sten izdelka, njegove toplotne
-prevodnosti in sredstva v katerem ga segrevamo. Pri prekratkem
+prevodnosti in sredstva, v katerem ga segrevamo. Pri prekratkem
 segrevanju se notranjost predmetov ne segreje do zahtevane
 temperature, kar privede do nepopolnega postopka obdelave. Pri
 predolgem segrevanju pa se lahko pojavlja grobozrnata struktura
