@@ -4,7 +4,7 @@
 \usepackage{times}
 
 % Robovi
-\usepackage[a4paper, left=3cm, right=2.5cm, top=3cm, bottom=3cm, footskip=1.5cm]{geometry}
+\usepackage[a4paper, left=3cm, right=2.5cm, top=3cm, bottom=3cm, footskip=1cm]{geometry}
 \usepackage[slovene]{babel}
 \usepackage{titling}
 \usepackage{authblk}
@@ -52,7 +52,8 @@
 \titleformat*{\subsubsection}{\fontsize{12}{12}\selectfont\bfseries}
 
 % Ne upoštevaj kazala, kazala slik in kazala tabel v kazalu
-\usepackage[nottoc,notlot,notlof]{tocbibind}
+% Oštevilči naslov Literatura
+\usepackage[nottoc,notlot,notlof,numbib]{tocbibind}
 
 % Nastavitev razmika med stolpci tabel
 \usepackage{multicol}
@@ -133,26 +134,26 @@
 	\subsection{Predstavitev podjetja}
 	\subfile{Naslovi/Uvod/predstavitev_podjetja.tex}
 	\newpage
-	
+
 	\section{Teoretični del}
 	\subsection{Stružnica}
 	\subfile{Naslovi/Teorija/struznica.tex}
-	
+
 	\subsection{Avtomatska stružnica}
 	\subfile{Naslovi/Teorija/avtomatska_struznica.tex}
-	
+
 	\subsection{Eno vretenski avtomat}
 	\subfile{Naslovi/Teorija/eno-vretenski_avtomat.tex}
-	
+
 	\subsection{Več vretenski avtomat}
 	\subfile{Naslovi/Teorija/vec-vretenski_avtomat.tex}
-	
+
 	\subsection{Izdelava krivulj}
 	\subfile{Naslovi/Teorija/izdelava_krivulj.tex}
-	
+
 	\subsection{O orodjih}
 	\subfile{Naslovi/Teorija/o_orodjih.tex}
-	
+
 	\newpage
 	\section{Praktični del}
 	\subfile{Naslovi/Prakticen_del/predstavitev_kosa.tex}
@@ -164,13 +165,13 @@
 	\subfile{Naslovi/Prakticen_del/montaza_orodja.tex}
 	\subfile{Naslovi/Prakticen_del/serijska_proizvodnja.tex}
 	\subfile{Naslovi/Prakticen_del/meritve.tex}
-	
+
 	\subfile{Naslovi/zaklucek.tex}
 \end{sloppypar}
 
 \newpage
 \bibliographystyle{unsrt}
-\renewcommand{\refname}{Viri}
+\renewcommand{\refname}{Literatura}
 \bibliography{Viri/viri.bib}
 
 \subfile{Naslovi/priloge.tex}
