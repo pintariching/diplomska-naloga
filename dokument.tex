@@ -2,10 +2,13 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{times}
+\usepackage{natbib}
 
 % Robovi
 \usepackage[a4paper, left=3cm, right=2.5cm, top=3cm, bottom=3cm, footskip=1cm]{geometry}
 \usepackage[slovene]{babel}
+\setlength{\bibsep}{5pt}
+
 \usepackage{titling}
 \usepackage{authblk}
 \usepackage{lipsum}
@@ -24,10 +27,13 @@
 \usepackage{datetime}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
+\usepackage{setspace}
 
-\usepackage{enumitem,datatool}
-\newlist{abbrv}{itemize}{1}
-\setlist[abbrv,1]{labelwidth=4cm,align=parleft,parsep=0pt,leftmargin=!}
+\usepackage{enumitem}
+\setlist[itemize,1]{parsep=4pt,leftmargin=!}
+\setlist[itemize,2]{parsep=4pt,leftmargin=!}
+\setlist[itemize,3]{parsep=4pt,leftmargin=!}
+\setlist[itemize,4]{parsep=4pt,leftmargin=!}
 
 % Nastavitev formata datumov
 \newdateformat{monthyeardate}{
@@ -36,7 +42,7 @@
     \THEYEAR}
 
 % Nastavitev barve linkov
-\usepackage[colorlinks, unicode]{hyperref}
+\usepackage[colorlinks]{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
@@ -45,6 +51,7 @@
     urlcolor=blue,
     hypertexnames=true,
 }
+\renewcommand\UrlFont{\rmfamily}
 
 % Nastavitev velikosti pisav naslovov
 \titleformat*{\section}{\fontsize{14}{18}\selectfont\bfseries\MakeUppercase}
@@ -63,10 +70,16 @@
 \usepackage{graphicx}
 \graphicspath{ {./Slike/} }
 
-% Prevod naslova kazala
-\addto\captionsenglish{
-  \renewcommand{\contentsname}
-    {Kazalo}
+\addto\captionsslovene{
+  \renewcommand{\contentsname}{K\MakeLowercase{azalo vsebine}}
+}
+
+\addto\captionsslovene{
+  \renewcommand{\listfigurename}{K\MakeLowercase{azalo slik}}
+}
+
+\addto\captionsslovene{
+  \renewcommand{\listtablename}{K\MakeLowercase{azalo tabel}}
 }
 
 \renewcommand{\baselinestretch}{1.5}
@@ -115,18 +128,22 @@
 \pagenumbering{Roman}
 \subfile{Naslovi/zahvale_in_povzetki.tex}
 \newpage
-
+\textbf{\fontsize{14}{21}\selectfont KAZALA}
 \tableofcontents
-\newpage
+\vspace*{0.5cm}
 
 \listoffigures
-\newpage
+\vspace*{0.5cm}
 
 \listoftables
-\newpage
+\vspace*{0.5cm}
 
-% \subfile{Preduvod/seznam_kratic_in_simbolov.tex}
-% \newpage
+\textbf{\fontsize{14}{21}\selectfont Priloge}
+
+Priloga 1: Tabela za izbiro hitrosti glavnega vretena \\
+Priloga 2: Tabela za izbiro hitrosti krivuljne gredi
+
+\newpage
 
 \pagenumbering{arabic}
 \begin{sloppypar}
