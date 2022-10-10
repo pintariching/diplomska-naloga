@@ -29,6 +29,8 @@
 \usepackage{titlesec}
 \usepackage{setspace}
 
+\usepackage[slovenian=guillemets]{csquotes}
+
 \usepackage{enumitem}
 \setlist[itemize,1]{parsep=4pt,leftmargin=!}
 \setlist[itemize,2]{parsep=4pt,leftmargin=!}
@@ -107,6 +109,21 @@
 }
 \makeatother
 
+\usepackage[titles]{tocloft}
+\renewcommand{\cftfigpresnum}{Slika }
+\renewcommand{\cftfigaftersnum}{:}
+
+\addtolength{\cftfignumwidth}{0.7cm}
+
+\renewcommand{\cfttabpresnum}{Tabela }
+\renewcommand{\cfttabaftersnum}{:}
+
+\addtolength{\cfttabnumwidth}{0.7cm}
+
+\setlength{\cftfigindent}{0pt}  % remove indentation from figures in lof
+\setlength{\cfttabindent}{0pt}  % remove indentation from tables in lot
+
+
 %
 % Začetek dokumenta
 %
@@ -127,6 +144,7 @@
 
 \pagenumbering{Roman}
 \subfile{Naslovi/zahvale_in_povzetki.tex}
+
 \newpage
 \textbf{\fontsize{14}{21}\selectfont KAZALA}
 \tableofcontents

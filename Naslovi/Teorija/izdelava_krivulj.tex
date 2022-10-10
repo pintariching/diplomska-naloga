@@ -7,7 +7,7 @@ plamenskim in laserskim odrezom, kjer moramo po koncu izreza površine
 dodatno zbrusiti ročno, saj navadno te niso gladke.
 
 Najbolj pogosto se izdelujejo iz jekla CK45 (1.1191), ki vsebuje
-0.45 \% C, 0.65 \% Mn, 0.035 \% P in manj kot 0.035 \% S ter ima natezno trdnost okoli 725 MPa. \cite{interna}
+0,45 \% C, 0,65 \% Mn, 0,035 \% P in manj kot 0,035 \% S ter ima natezno trdnost okoli 725 MPa. \cite{interna}
 
 Pred CNC-stroji so krivulje izdelovali ročno na rezkalnih in vrtalnih strojih
 in dokončno obdelali z ročnimi brusilkami.
@@ -31,7 +31,7 @@ po meri izdelanih ploščatih krivulj.
 \subsubsection{Preračun navadnih krivulj}
 \label{izracun_krivulj}
 Primer: Imamo obdelovanec premera D -- 12 mm, ki se vrti z hitrostjo S = 2000 \( \frac{obr}{min} \)
-in časom enega cikla T -- 30 s. Hočemo ga odrezati z odreznim nožem z pomikom f -- 0.04 \( \frac{mm}{obr} \)
+in časom enega cikla T -- 30 s. Hočemo ga odrezati z odreznim nožem z pomikom f -- 0,04 \( \frac{mm}{obr} \)
 (da stvar poenostavimo, sem že izbral željen pomik na obrat, namesto da bi ga
 izračunal iz rezalne hitrosti in premera).
 
@@ -44,8 +44,8 @@ imamo simetrično obdelovanje.
 	\label{cas_za_hod}
 	\begin{split}
 		t &= \frac{l*60\ s}{f*S} \\
-		t &= \frac{7\ mm*60}{0.04\ \frac{mm}{obr}*2000\ \frac{obr}{min}} \\
-		t &= 5.25\ s
+		t &= \frac{7\ mm*60}{0,04\ \frac{mm}{obr}*2000\ \frac{obr}{min}} \\
+		t &= 5,25\ s
 	\end{split}
 \end{equation}
 
@@ -55,7 +55,7 @@ dosegli željen pomik, izračunamo tako:
 	\label{kot_krivulje}
 	\begin{split}
 		\alpha &= \frac{360\degree}{T} * t \\
-		\alpha &= \frac{360\degree}{30\ s} * 5.25\ s \\
+		\alpha &= \frac{360\degree}{30\ s} * 5,25\ s \\
 		\alpha &= 63\degree
 	\end{split}
 \end{equation}
@@ -89,10 +89,10 @@ bobnaste krivulje.
 
 \subsubsection{Kaljenje}
 Po izdelavi se krivulje kalijo, da zmanjšamo obrabo in povečamo
-obstojnost. ''Jekla, ki jih kalimo, najprej segrevamo na predpisano
-kalilno temperaturo. [...] Sledi zadrževanje izdelkov pri temperaturi
-kajlenja, da dobimo izenačeno temperaturo med površino in jedrom
-žarjenega izdelka.'' \cite{gradiva}
+obstojnost. \enquote{Jekla, ki jih kalimo, najprej segrevamo na predpisano
+	kalilno temperaturo. [...] Sledi zadrževanje izdelkov pri temperaturi
+	kajlenja, da dobimo izenačeno temperaturo med površino in jedrom
+	žarjenega izdelka.} \cite{gradiva}
 Za tem krivuljo kalimo v kalilnem sredstvu, zraku, olju ali najlažje
 v vodi. Celoten potek kaljenja je prikazan na spodji Sliki \ref{diagram_kaljenja}.
 Izbira kalilnega sredstva je odvisna od samega materiala,
