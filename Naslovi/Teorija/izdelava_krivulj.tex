@@ -30,35 +30,42 @@ po meri izdelanih ploščatih krivulj.
 
 \subsubsection{Preračun navadnih krivulj}
 \label{izracun_krivulj}
-Primer: Imamo obdelovanec premera D -- 12 mm, ki se vrti z hitrostjo S = 2000 \( \frac{obr}{min} \)
+Primer: Imamo obdelovanec premera D -- 12 mm, ki se vrti z hitrostjo S -- 2000 \( \frac{obr}{min} \)
 in časom enega cikla T -- 30 s. Hočemo ga odrezati z odreznim nožem z pomikom f -- 0,04 \( \frac{mm}{obr} \)
 (da stvar poenostavimo, sem že izbral željen pomik na obrat, namesto da bi ga
 izračunal iz rezalne hitrosti in premera).
 
 Zaradi varnosti, bomo določili, da začne nož z delovnim gibom
-na $\phi13$ in konča na $\phi-1$. To pomeni, da bo potoval 7 mm, ker
+na $\phi 13$ in konča na $\phi 1$. To pomeni, da bo potoval l -- 7 mm, ker
 imamo simetrično obdelovanje.
 
-Čas, potreben za ta gib izračunamo
+Čas, potreben za ta gib izračunamo z formulo
 \begin{equation}
-	\label{cas_za_hod}
 	\begin{split}
-		t &= \frac{l*60\ s}{f*S} \\
+		t &= \frac{l*60\ s}{f*S}
+	\end{split}
+\end{equation}
+kjer dobimo rezultat
+\begin{equation*}
+	\begin{split}
 		t &= \frac{7\ mm*60}{0,04\ \frac{mm}{obr}*2000\ \frac{obr}{min}} \\
 		t &= 5,25\ s
 	\end{split}
-\end{equation}
-
+\end{equation*}
 Kolikšen kot krivulje mora obsegati vzpon, da bomo
-dosegli željen pomik, izračunamo tako:
+dosegli željen pomik, izračunamo z
 \begin{equation}
-	\label{kot_krivulje}
 	\begin{split}
-		\alpha &= \frac{360\degree}{T} * t \\
+		\alpha &= \frac{360\degree}{T} * t
+	\end{split}
+\end{equation}
+kar znaša
+\begin{equation*}
+	\begin{split}
 		\alpha &= \frac{360\degree}{30\ s} * 5,25\ s \\
 		\alpha &= 63\degree
 	\end{split}
-\end{equation}
+\end{equation*}.
 
 Če imamo razmerje med vzvodi sledilca in nožem 1:1, potem se mora krivulja v 63° vzpeti za 7 mm.
 Zdaj imamo dve možnosti:

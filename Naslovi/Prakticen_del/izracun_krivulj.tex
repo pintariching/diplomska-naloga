@@ -11,21 +11,19 @@ Pomik: 0,04 \( \frac{mm}{vrt} \) \\
 Dolžina struženja: 1 mm
 
 Z zgornjimi podatki izračunamo potreben čas:
-\begin{equation}
+\begin{equation*}
 	\begin{split}
-		t &= \frac{l*60\ s}{f*S} \\
 		t &= \frac{1\ mm*60\ s}{0,04\ \frac{mm}{obr}*2000\ \frac{obr}{min}} \\
 		t &= 0,75\ s,
 	\end{split}
-\end{equation}
+\end{equation*}
 nato pa še kot vzpona krivulje:
-\begin{equation}
+\begin{equation*}
 	\begin{split}
-		\alpha &= \frac{360\degree}{T} * t \\
 		\alpha &= \frac{360\degree}{10\ s} * 0,75\ s\\
 		\alpha &= 27\degree.
 	\end{split}
-\end{equation}
+\end{equation*}
 
 Spodaj na Sliki \ref{shema_robov} sem narisal še skico orodja
 in obdelovanca pri pobiranju robov.
@@ -39,25 +37,23 @@ in obdelovanca pri pobiranju robov.
 \end{figure}
 
 \subsubsection{Središčenje}
-Vrtljaji: 2000 \( \frac{vrt}{min} \) + 2200 \( \frac{vrt}{min} \)\\
+Vrtljaji: 2000 \( \frac{vrt}{min} \) + 2000 \( \frac{vrt}{min} \)\\
 Pomik: 0,03 \( \frac{mm}{vrt} \) \\
 Dolžina vrtanja: 2 mm
 
 Enako krivuljo sem uporabil tudi za povrtavanje luknje z druge strani.
-\begin{equation}
+\begin{equation*}
 	\begin{split}
-		t &= \frac{l*60\ s}{f*S} \\
-		t &= \frac{2\ mm*60\ s}{0,03\ \frac{mm}{obr}*4200\ \frac{obr}{min}} \\
-		t &= 0,95\ s
+		t &= \frac{2\ mm*60\ s}{0,03\ \frac{mm}{obr}*4000\ \frac{obr}{min}} \\
+		t &= 1\ s
 	\end{split}
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 	\begin{split}
-		\alpha &= \frac{360\degree}{T} * t \\
-		\alpha &= \frac{360\degree}{10\ s} * 0,95\  s\\
-		\alpha &= 34,2\degree
+		\alpha &= \frac{360\degree}{10\ s} * 1\  s\\
+		\alpha &= 36\degree
 	\end{split}
-\end{equation}
+\end{equation*}
 Spodaj na Sliki \ref{centriranje} je prikazan potek
 centriranja pred vrtanjem.
 \begin{figure}[H]
@@ -69,23 +65,21 @@ centriranja pred vrtanjem.
 	\end{center}
 \end{figure}
 \subsubsection{Vrtanje}
-Vrtljaji: 2000 \( \frac{vrt}{min} \) + 2200 \( \frac{vrt}{min} \)\\
+Vrtljaji: 2000 \( \frac{vrt}{min} \) + 2000 \( \frac{vrt}{min} \)\\
 Pomik: 0,03 \( \frac{mm}{vrt} \) \\
 Dolžina vrtanja: 8 mm
-\begin{equation}
+\begin{equation*}
 	\begin{split}
-		t &= \frac{l*60\ s}{f*S} \\
-		t &= \frac{8\ mm*60\ s}{0,03\ \frac{mm}{obr}*4200\ \frac{obr}{min}} \\
-		t &= 3,8\ s
+		t &= \frac{8\ mm*60\ s}{0,03\ \frac{mm}{obr}*4000\ \frac{obr}{min}} \\
+		t &= 4\ s
 	\end{split}
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 	\begin{split}
-		\alpha &= \frac{360\degree}{T} * t \\
-		\alpha &= \frac{360\degree}{10\ s} * 3,8\ s\\
-		\alpha &= 136,8\degree
+		\alpha &= \frac{360\degree}{10\ s} * 4\ s\\
+		\alpha &= 144\degree
 	\end{split}
-\end{equation}
+\end{equation*}
 Na spodnji Sliki \ref{vrtanje} je prikazana skica vrtanja
 luknje $\phi 1,4$.
 \begin{figure}[H]
@@ -116,20 +110,18 @@ na Sliki \ref{raztegnjen_boben}.
 Vrtljaji: 2000 \( \frac{vrt}{min} \) \\
 Pomik: 0,02 \( \frac{mm}{vrt} \) \\
 Dolžina struženja: 3 mm
-\begin{equation}
+\begin{equation*}
 	\begin{split}
-		t &= \frac{l*60\ s}{f*S} \\
 		t &= \frac{3\ mm*60\ s}{0,02\ \frac{mm}{obr}*2000\ \frac{obr}{min}} \\
 		t &= 4,5\ s
 	\end{split}
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 	\begin{split}
-		\alpha &= \frac{360\degree}{T} * t \\
 		\alpha &= \frac{360\degree}{10\ s} * 3,8\ s\\
 		\alpha &= 146\degree
 	\end{split}
-\end{equation}
+\end{equation*}
 
 \subsubsection{Rezultati izračunov in izbira standardnih krivulj}
 V spodnji Tabeli \ref{Tabela rezultatov} so prikazani
@@ -149,9 +141,9 @@ na krivuljo, sem se odločil za vse krivulje uporabiti razmerje ročic
 			\hline
 			Struženje roba & 1          & 5        & 5                      & 27      \\
 			\hline
-			Centriranje    & 2          & 5        & 10                     & 34,2    \\
+			Centriranje    & 2          & 5        & 10                     & 36      \\
 			\hline
-			Vrtanje        & 8          & 5        & 40                     & 136,8   \\
+			Vrtanje        & 8          & 5        & 40                     & 144     \\
 			\hline
 			Odrez          & 3          & 5        & 15                     & 146     \\
 			\hline
